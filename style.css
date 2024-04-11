@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: 'Segoe UI';
+    background-image: url('Fondo.jpg');
+    background-size: cover; 
+    background-position: center center; 
+}
+#title {
+    background-image: url('Logopng.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+  }
+  h1 {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 3.7em;
+    padding: 1px; /* Espacio interno alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    color: #6c23cd; /* Color de texto */
+}
+
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 0.5em;
+    color: rgb(7, 230, 189);
+    
+}
+
+.search-container input {
+    font-size: 1em;
+    border: 3px solid #002d96;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+    background-color: #333;
+    color: #fff; /* Color de texto */
+    transition: border-color 0.3s, background-color 0.3s; /* Transición suave */
+}
+/* Cambiamos el estilo cuando el input está enfocado */
+.search-container input:focus {
+    border-color: #ffcc00; /* Cambia el color del borde al enfocar */
+    background-color: #444; /* Cambia el color de fondo al enfocar */
+}
+  
+  .search-container button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+  }
+  
+  
+  
+  .search-container.dark {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .search-container.dark input {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .search-container.dark button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .pokedex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .pokedex-container h2 {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Segoe UI', sans-serif; 
+    font-size: 3.7em;
+    color: #0b44e0; 
+    
+} 
+
+  
+  .pokedex-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+  }
+  
+  .pokedex-container p {
+    text-align: center;
+    margin: 0;
+    font-size: 2.7em;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    height: 2em;
+    
+  }
